@@ -115,6 +115,13 @@ Running the testisHealthy() method:
 
 Running the testFitsInCage method:
 
+![image](https://user-images.githubusercontent.com/104089036/233321906-cb79ac46-d55c-4bdd-9df5-a57f51f06a67.png)
 
-
-
+7. Add a new method to the Boa class, with this purpose and signature:
+<pre>
+// produces the length of the Boa in inches
+public int lengthInInches(){
+// you need to write the body of this method
+}
+</pre>
+Add a new test case to the BoaTest class that tests the lengthInInches() method. Make sure you annotate the new test method with @Test. Run your tests.
