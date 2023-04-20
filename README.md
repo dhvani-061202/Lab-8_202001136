@@ -113,7 +113,7 @@ Running the testisHealthy() method:
 
 ![image](https://user-images.githubusercontent.com/104089036/233320410-92ba0cfc-6b38-4d99-a97e-683be15c2908.png)
 
-Running the testFitsInCage method:
+Running the testFitsInCage() method:
 
 ![image](https://user-images.githubusercontent.com/104089036/233321906-cb79ac46-d55c-4bdd-9df5-a57f51f06a67.png)
 
@@ -124,4 +124,28 @@ public int lengthInInches(){
 // you need to write the body of this method
 }
 </pre>
-Add a new test case to the BoaTest class that tests the lengthInInches() method. Make sure you annotate the new test method with @Test. Run your tests.
+Add a new test case to the Boa_test class that tests the lengthInInches() method. Make sure you annotate the new test method with @Test. Run your tests.
+
+Adding the following code to the Boa class:
+<pre>
+// produces the length of the Boa in inches
+public int lengthInInches(){
+	return this.length*12;
+}
+</pre>
+
+The modified Boa class is given as:
+
+![image](https://user-images.githubusercontent.com/104089036/233323761-978fd7f2-6f3c-4123-94ea-d5ea2e163387.png)
+
+Adding test cases to the JUnit Test Case:
+<pre>
+@Test
+public void testLengthInInches()
+{
+	assertEquals(24,jen.lengthInInches());
+	assertEquals(36,ken.lengthInInches());
+}
+</pre>
+
+![image](https://user-images.githubusercontent.com/104089036/233324434-4f835e51-e8df-41f7-b62c-042c6f04b66b.png)
