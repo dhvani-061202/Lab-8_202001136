@@ -149,3 +149,12 @@ public void testLengthInInches()
 </pre>
 
 ![image](https://user-images.githubusercontent.com/104089036/233324434-4f835e51-e8df-41f7-b62c-042c6f04b66b.png)
+
+Running the test cases:
+
+![image](https://user-images.githubusercontent.com/104089036/233324729-701d454c-5a5f-4de4-a4dd-d9cff7884fc6.png)
+
+8. Here are some other things you should know about unit testing and JUnit:
+* Each method annotated with @Test will be run, but the order of the tests is not guaranteed.
+* Any method annotated with @Before will be run before each test executes.
+* Any method annotated with @After will be run after each test executes.
